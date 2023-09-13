@@ -1,0 +1,140 @@
+:root{
+    --color-orange: #FF6900;
+    --color-footer: #1a1a1a;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.debug{
+    border: 1px solid red;
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+li{
+    list-style: none;
+}
+
+
+/* ---------------------------- HEADER */
+
+header{
+    background-color: var(--color-orange);
+    color: white;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 50px;
+    padding: 5px 0px;
+} 
+
+.h-flex{
+    display: flex;
+    flex-flow:row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrapper-logo{
+    width: 150px;
+}
+
+.wrapper-logo img{
+    width: 100%;
+}
+
+
+header li, .wrapper-icons i{
+    margin: 5px;
+}
+
+/* --------------------------------- MAIN */
+
+main{
+    margin-top: 100px;
+}
+
+.m-flex{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.card{
+    margin-bottom: 50px;
+    width: calc(100% / 3 - 10px);
+}
+
+.card-image{
+    width: 100%;
+}
+
+.card-image img{
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-image:hover img.primary{
+    display: none;
+}
+
+.card-image img.secondary{
+    display: none;
+}
+
+.card-image:hover img.secondary{
+    display: block;
+}
+
+.card-name-item{
+    margin-top: -15px;
+
+}
+
+.box-sales{
+    color: white;
+    position: relative;
+    bottom: 60px;
+    font-weight: bold;
+}
+
+.red-box{
+    background-color: red;
+    margin-right: 5px;
+    padding: 5px;
+}
+
+.green-box{
+    background-color: green;
+    padding: 5px;
+}
+
+/* .box-heart{
+    position: relative;
+    top:0;
+}
+ */
+
+
+
+
+
+/* ----------------------------------- FOOTER */
+footer{
+    background-color:var(--color-footer);
+    color: white;
+}
+
+.f-flex{
+    display: flex;
+    justify-content: space-between;
+}
