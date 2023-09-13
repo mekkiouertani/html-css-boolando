@@ -96,8 +96,7 @@ main{
 }
 
 .card-name-item{
-    margin-top: -15px;
-
+    margin-top: -30px;
 }
 
 .box-sales{
@@ -118,11 +117,20 @@ main{
     padding: 5px;
 }
 
-/* .box-heart{
+.box-heart{
+    display: inline;
+    background-color:white;
+    padding: 10px;
     position: relative;
-    top:0;
+    bottom: 550px;
+    left: 350px;
+    font-size: 1.2em;
 }
- */
+
+.box-heart i:hover{
+    color: red;
+}
+
 
 
 
