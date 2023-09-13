@@ -21,9 +21,17 @@
 li{
     list-style: none;
 }
-
+ body{
+    font-size: 1.1em;
+ }
 
 /* ---------------------------- HEADER */
+.h-flex{
+    display: flex;
+    flex-flow:row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
 
 header{
     background-color: var(--color-orange);
@@ -33,17 +41,20 @@ header{
     top: 0;
     left: 0;
     height: 50px;
-    padding: 5px 0px;
+    z-index: 1000;
 } 
 
-.h-flex{
-    display: flex;
-    flex-flow:row wrap;
-    justify-content: space-between;
-    align-items: center;
+nav a{
+    text-decoration: none;
+    color: white;
+}
+
+ul a:hover{
+    text-decoration: underline;
 }
 
 .wrapper-logo{
+    padding: 10px;
     width: 150px;
 }
 
@@ -61,6 +72,12 @@ header li, .wrapper-icons i{
 main{
     margin-top: 100px;
 }
+
+main h6{
+    font-weight: 300;
+    font-size: 80%;
+}
+
 
 .m-flex{
     display: flex;
@@ -96,7 +113,7 @@ main{
 }
 
 .card-name-item{
-    margin-top: -30px;
+    margin-top: -40px;
 }
 
 .box-sales{
@@ -127,12 +144,25 @@ main{
     font-size: 1.2em;
 }
 
+.box-heart a{
+    color: black;
+}
+
 .box-heart i:hover{
     color: red;
 }
 
+.price{
+    color: red;
+    font-size: 0.9em;
+    font-weight: bold;
+}
 
-
+.old-price{
+    font-size: 0.8em;
+    text-decoration: line-through;
+    padding: 0 5px;
+}
 
 
 
@@ -140,9 +170,30 @@ main{
 footer{
     background-color:var(--color-footer);
     color: white;
+    padding: 20px;
 }
 
 .f-flex{
     display: flex;
     justify-content: space-between;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+.f-left h4, .f-right p{
+    font-size: 1.1em;
+    padding: 20px 0px;
+}
+
+
+footer a{
+    color: white;
+    text-decoration: none;
+}
+
+footer li{
+    padding-right: 15px;
 }
